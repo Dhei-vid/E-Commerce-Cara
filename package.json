@@ -1,0 +1,18 @@
+{
+  "name": "e-commerce-site",
+  "version": "1.0.0",
+  "description": "An E-Commerce Site",
+  "default": "main.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "David Etuk",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2"
+  },
+  "dependencies": {
+    "parcel": "^2.6.2"
+  }
+}
