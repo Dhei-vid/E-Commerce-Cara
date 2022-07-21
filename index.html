@@ -4,21 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
     <title>E-Commerce Site</title>
-    <script
-      src="https://kit.fontawesome.com/3605f65844.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="src/SASS/main.scss" />
-    <script type="module " src="/src/JS/main.js"></script>
+    <script defer src="/src/JS/main.js"></script>
   </head>
   <body>
     <header id="header">
@@ -35,13 +23,15 @@
           <li><a href="#">Contact</a></li>
           <li>
             <a href="#">
-              <img
-                src="src/images/Ionic_Icons/bag-outline.svg"
-                alt="Bag Icon"
-              />
+              <ion-icon name="bag-outline"></ion-icon>
             </a>
           </li>
         </ul>
+      </div>
+
+      <div id="mobile">
+        <ion-icon name="bag-outline"></ion-icon>
+        <ion-icon class="mobileMenu" name="menu-outline"></ion-icon>
       </div>
     </header>
 
@@ -425,31 +415,11 @@
         <div class="follow">
           <h4>Follow Us</h4>
           <div class="icon">
-            <object
-              class="footer-icons"
-              data="/src/images/Ionic_Icons/logo-facebook.svg"
-              type=""
-            ></object>
-            <object
-              class="footer-icons"
-              data="/src/images/Ionic_Icons/logo-instagram.svg"
-              type=""
-            ></object>
-            <object
-              class="footer-icons"
-              data="/src/images/Ionic_Icons/logo-twitter.svg"
-              type=""
-            ></object>
-            <object
-              class="footer-icons"
-              data="/src/images/Ionic_Icons/logo-pinterest.svg"
-              type=""
-            ></object>
-            <object
-              class="footer-icons"
-              data="/src/images/Ionic_Icons/logo-youtube.svg"
-              type=""
-            ></object>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-pinterest"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
           </div>
         </div>
       </div>
@@ -487,5 +457,13 @@
         <img src="/src/images/pay/pay.png" alt="" />
       </div>
     </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

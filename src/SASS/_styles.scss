@@ -40,6 +40,14 @@ li > a > img {
   position: sticky;
   top: 0;
   left: 0;
+
+  #mobile {
+    display: none;
+
+    ion-icon {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 // hero
@@ -473,9 +481,9 @@ li > a > img {
     color: $color-text;
   }
 
-  .footer-icons {
-    width: 1.2rem;
-    filter: opacity(0.4) drop-shadow(0 0 0 $color-text);
+  ion-icon {
+    font-size: 1.2rem;
+    color: $color-text;
     padding-right: 0.2rem;
   }
 

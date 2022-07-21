@@ -102,6 +102,37 @@ $tablet: 48em;
 }
 
 @media screen and (max-width: $tablet) {
+  #navbar {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 30vw;
+    background-color: #e7eaf5;
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
+    padding: 4rem 0 0 1rem;
+
+    li {
+      margin-bottom: 1.8rem;
+    }
+
+    .active {
+      right: 0;
+    }
+  }
+
+  #mobile {
+    display: block !important;
+
+    object {
+      width: 1.4rem !important;
+    }
+  }
+
   #sm-banner {
     grid-template-columns: 1fr;
   }
