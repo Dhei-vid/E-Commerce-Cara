@@ -22,6 +22,10 @@ li > a > img {
       transition: all 0.3s ease;
     }
   }
+
+  #mobileClose {
+    display: none;
+  }
 }
 
 #navbar li a:hover {
@@ -44,8 +48,12 @@ li > a > img {
   #mobile {
     display: none;
 
-    ion-icon {
-      font-size: 1.5rem;
+    #mobileClose {
+      display: none;
+    }
+
+    i {
+      font-size: 2rem;
     }
   }
 }
@@ -91,7 +99,7 @@ li > a > img {
   flex-wrap: wrap;
 
   .features__box {
-    width: 180px;
+    width: 180px !important;
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
@@ -169,7 +177,7 @@ li > a > img {
     margin: 15px 0;
 
     .description,
-    .cart__Icon {
+    i {
       text-align: start;
     }
 
@@ -205,22 +213,16 @@ li > a > img {
     border-radius: 1.3rem;
   }
 
-  .fa-circle {
-    color: $gray5;
+  .product .cart_Icon {
+    font-size: 1.2rem;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 10px;
+    color: $colorPrimary;
+    background: $gray4;
+    padding: 10px;
   }
-}
-
-#product_I .product .cart__Icon {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border: 1px solid $gray5;
-  border-radius: 50%;
-  background-color: $gray5;
-  color: $colorPrimary;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
 }
 
 // Banner
@@ -481,8 +483,8 @@ li > a > img {
     color: $color-text;
   }
 
-  ion-icon {
-    font-size: 1.2rem;
+  i {
+    font-size: 1.5rem;
     color: $color-text;
     padding-right: 0.2rem;
   }

@@ -4,12 +4,21 @@
 // Laptop-Small (922px - 57.625em)
 // Laptop-Small (830px - 51.875em)
 // tablet (768px - 48em)
+// tablet Small (636px - 39.75em)
+// tablet VSmall (606px - 37.875em)
+// Mobile (500px - 31.25em)
+// MobileSmall (425px - 26.5625em)
 $laptop1272: 79.5em;
 $laptop1056: 66em;
 $laptop922: 57.625em;
 $laptop830: 51.875em;
 $tablet: 48em;
+$tabletSmall: 39.75em;
+$tabletVSmall: 37.875em;
+$mobile1: 31.25em;
+$mobile2: 26.5625em;
 
+// MEDIA QUERIES
 @media screen and (max-width: $laptop1272) {
   * {
     font-size: 1rem;
@@ -62,6 +71,20 @@ $tablet: 48em;
     font-size: 0.9rem;
   }
 
+  #hero {
+    height: 65vh;
+  }
+
+  #sm-banner {
+    .banner__box {
+      height: 20vh;
+    }
+  }
+
+  #lg-banner .lg-banner__box {
+    height: 14vh;
+  }
+
   #newsletter {
     gap: 1rem;
     input[type="search"] {
@@ -76,6 +99,7 @@ $tablet: 48em;
 
 @media screen and (max-width: $laptop830) {
   #hero {
+    height: 60vh;
     h4 {
       font-size: 1.2rem;
     }
@@ -93,15 +117,54 @@ $tablet: 48em;
     }
   }
 
+  // Features
+  #features {
+    justify-content: center;
+
+    .features__box {
+      margin: 20px;
+    }
+  }
+
+  // Product
+  #product_I {
+    .product__container {
+      justify-content: center;
+    }
+
+    .product {
+      margin: 20px;
+      min-width: 12rem;
+    }
+  }
+
   #banner {
     h2,
     span {
       font-size: 2.65rem;
     }
   }
+
+  #sm-banner {
+    .banner__box {
+      height: 35vh;
+    }
+  }
+
+  #lg-banner {
+    .lg-banner__box {
+      height: 20vh;
+    }
+  }
 }
 
 @media screen and (max-width: $tablet) {
+  // General styles
+  .section-p1 {
+    padding: 40px 30px;
+  }
+
+  // Navbar & Mobile menu
   #navbar {
     justify-content: flex-start;
     align-items: flex-start;
@@ -111,28 +174,68 @@ $tablet: 48em;
     top: 0;
     right: -300px;
     height: 100vh;
-    width: 30vw;
-    background-color: #e7eaf5;
+    width: 40%;
+    background-color: $colorBG;
     box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
     padding: 4rem 0 0 1rem;
+    transition: all 0.5s ease-in-out;
 
     li {
       margin-bottom: 1.8rem;
     }
 
-    .active {
-      right: 0;
+    .ph-bag {
+      display: none;
     }
+  }
+
+  #mobileClose {
+    display: initial !important;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 1.5rem;
+  }
+
+  .active {
+    right: 0px !important;
   }
 
   #mobile {
     display: block !important;
 
-    object {
-      width: 1.4rem !important;
+    .ph-bag {
+      padding-right: 0.5rem;
     }
   }
 
+  // Hero
+  #hero {
+    height: 55vh;
+    background-position: right 30% top 30%;
+  }
+
+  // Features
+  #features {
+    justify-content: center;
+
+    .features__box {
+      margin: 15px;
+    }
+  }
+
+  // Product
+  #product_I {
+    .product__container {
+      justify-content: center;
+    }
+
+    .product {
+      margin: 5px;
+    }
+  }
+
+  // Banners
   #sm-banner {
     grid-template-columns: 1fr;
   }
@@ -148,10 +251,11 @@ $tablet: 48em;
     }
     .lg-banner__box:nth-child(3) {
       grid-row: 2;
-      grid-column: 2 / 4;
+      grid-column: 1 / span 4;
     }
   }
 
+  // Footer
   #footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -159,5 +263,78 @@ $tablet: 48em;
     .col ul li a {
       font-size: 1.2rem;
     }
+  }
+}
+
+@media screen and (max-width: $tabletSmall) {
+  #hero {
+    padding: 0 2rem;
+    background-position: right 30% top 30%;
+  }
+
+  #newsletter {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: $mobile1) {
+  .section-p1 {
+    padding: 40px 10px;
+  }
+
+  #navbar {
+    padding: 4rem 0 0 0.5rem;
+  }
+
+  #hero {
+    height: 75vh;
+    background-image: none;
+    background-color: $colorBG;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  #features {
+    .features__box {
+      margin: 15px 5px;
+    }
+  }
+
+  #product_I {
+    .product {
+      min-width: 12.625rem;
+      margin: 15px 5px;
+    }
+  }
+
+  #lg-banner {
+    grid-template-columns: 1fr;
+
+    .lg-banner__box:nth-child(1) {
+      grid-row: 1;
+      grid-column: 1 / span 4;
+    }
+    .lg-banner__box:nth-child(2) {
+      grid-row: 2;
+      grid-column: 1 / span 4;
+    }
+    .lg-banner__box:nth-child(3) {
+      grid-row: 3;
+      grid-column: 1 / span 4;
+    }
+  }
+
+  #footer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: $mobile2) {
+  #product_I .product {
+    width: 100%;
   }
 }
