@@ -1,0 +1,34 @@
+// SHOP PAGE
+#page__Header {
+  background-image: url("/src/images/banner/b1.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: top 30% right 0;
+  height: 40vh;
+  padding: 0 5rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  h2,
+  p {
+    color: $gray2;
+  }
+}
+
+#pagination {
+  text-align: center;
+
+  a {
+    background-color: $colorPrimary;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: $gray4;
+  }
+
+  i {
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+}
