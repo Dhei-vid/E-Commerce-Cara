@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Site</title>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="src/SASS/main.scss" />
+    <script type="module" src="/src/JS/main.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <a href="#">
+        <img class="logo" src="/src/images/logo.png" alt="Logo image" />
+      </a>
+
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="/shop.html">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#"><i class="ph-bag"></i></a>
+          </li>
+          <i id="mobileClose" class="ph-x-bold"></i>
+        </ul>
+      </div>
+
+      <div id="mobile">
+        <i class="ph-bag"></i>
+        <i id="mobileMenu" class="ph-list"></i>
+      </div>
+    </header>
+
+    <section id="product_details" class="section-p1">
+      <div class="single--product-img">
+        <img src="img/products/f1.jpg" alt="">
+      </div>
+      <div></div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newsletter-text">
+        <h4>Sign Up for Newsletters</h4>
+        <p>
+          Get E-mail updates about our latest shop and
+          <span>special offers.</span>
+        </p>
+      </div>
+
+      <div class="newsletter-input">
+        <form>
+          <input
+            type="search"
+            id="gsearch"
+            name="gsearch"
+            placeholder="name@gmail.com"
+          />
+          <button class="btn normal-button">Sign Up</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer" class="section-p1">
+      <div class="col">
+        <img src="/src/images/logo.png" alt="Logo image" />
+        <h4>Contact</h4>
+        <p>
+          <strong>Address:</strong> 562 Wellington Road, Street 32, San
+          Francisco
+        </p>
+        <p><strong>Phone:</strong> +01 2222 365/(+91) 2345 6789</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="ph-facebook-logo-bold"></i>
+            <i class="ph-instagram-logo-bold"></i>
+            <i class="ph-twitter-logo-bold"></i>
+            <i class="ph-pinterest-logo-bold"></i>
+            <i class="ph-youtube-logo-bold"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery Information</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <ul>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">View Cart</a></li>
+          <li><a href="#">My Wishlist</a></li>
+          <li><a href="#">Track My Order</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div>
+          <img class="install__icons" src="/src/images/pay/app.jpg" alt="" />
+          <img class="install__icons" src="/src/images/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="/src/images/pay/pay.png" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>
