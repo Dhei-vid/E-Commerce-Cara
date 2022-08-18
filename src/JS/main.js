@@ -15,7 +15,4 @@ mobileClose.addEventListener("click", function () {
   navEle.classList.remove("active");
 });
 
-const fun = function () {
-  console.log('Yes')
-}
 
